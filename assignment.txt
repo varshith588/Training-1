@@ -1,0 +1,30 @@
+Q1)Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+
+Answer:
+
+Datatypes
+*********
+--a datatype is a classification of data that tells that ths  complier or interpeter how to use variables and method.
+--it represents the type, nature an the set of operation for the value it stores.
+
+
+Primitive and Non Primitive data types
+--------------------------------------
+
+--primitive data is a type of data structure that stores the data of only one type 
+   example:
+    -string
+    -number
+    -boolean
+    -undefined
+    -null
+    -symbol
+    -bigint
+--non-primitive data is a type of data structure which is a user defined that stores the data of different types in single entity
+   example:
+    -array
+    -functions
+    -objects
+    -math , date , json
+
+
