@@ -140,3 +140,25 @@ Decision making statments:-
 - ternary
 
 prompt():- this method is used to collect the data from the users.
+
+
+Looping statments:
+*****************
+- to excute the block of codes repeatedly.
+for Loop:-
+-will  be used when the exact iteration count will be known.
+syntax :- for(intitialization;condition;updation){
+            //statment
+            }
+while:-
+- will be used when we dont know the iteration count.
+syntax :- while(condition){
+                //statment
+                }
+
+do-while:-
+- while be used when we dont know the iteration count.
+syntax :- do{
+            //statment
+            }while(condition)
+
