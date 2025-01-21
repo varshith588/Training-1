@@ -112,3 +112,40 @@
 //     console.log(a , b);
 // }
 // x();
+
+// function x(){
+//     let x = 10;
+//     var y = 20;
+//     console.log(x, y);
+// }
+// x();
+// console.log(x);
+
+// function x() {
+//     let a = 10;
+//     const b = 20;
+//     console.log(a,b);
+//     function z(){
+//         let p="Js";
+//         var q = "ReactJs";
+//         console.log(p, q);
+//         function z(){
+//             const username ="Harish";
+//             console.log(username);
+//             console.log(a);
+//             console.log(q);
+//         }
+//         z();
+//     }
+//     y();
+// }
+// x();
+var a =100;
+let b="hi";
+function x(){
+    var user = "Vinay";
+    let company = "Google";
+    const sal = 1234567890;
+    
+};
+x();
