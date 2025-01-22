@@ -1,0 +1,139 @@
+Write a JavaScript program that prints numbers from 1 to 100. However, for multiples of 3, print 'Fizz' instead of the number, and for multiples of 5, print 'Buzz'. For numbers that are multiples of both 3 and 5, print 'FizzBuzz'.
+Expected Output:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+...
+
+Answer:
+****
+
+PROGRAM
+-------
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('FizzBuzz');
+  } else if (i % 3 === 0) {
+    console.log('Fizz');
+  } else if (i % 5 === 0) {
+    console.log('Buzz');
+  } else {
+    console.log(i);
+  }
+}
+
+output
+-------
+
+1
+operators.js:16 2
+operators.js:12 Fizz
+operators.js:16 4
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 7
+operators.js:16 8
+operators.js:12 Fizz
+operators.js:14 Buzz
+operators.js:16 11
+operators.js:12 Fizz
+operators.js:16 13
+operators.js:16 14
+operators.js:10 FizzBuzz
+operators.js:16 16
+operators.js:16 17
+operators.js:12 Fizz
+operators.js:16 19
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 22
+operators.js:16 23
+operators.js:12 Fizz
+operators.js:14 Buzz
+operators.js:16 26
+operators.js:12 Fizz
+operators.js:16 28
+operators.js:16 29
+operators.js:10 FizzBuzz
+operators.js:16 31
+operators.js:16 32
+operators.js:12 Fizz
+operators.js:16 34
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 37
+operators.js:16 38
+operators.js:12 Fizz
+operators.js:14 Buzz
+operators.js:16 41
+operators.js:12 Fizz
+operators.js:16 43
+operators.js:16 44
+operators.js:10 FizzBuzz
+operators.js:16 46
+operators.js:16 47
+operators.js:12 Fizz
+operators.js:16 49
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 52
+operators.js:16 53
+operators.js:12 Fizz
+operators.js:14 Buzz
+operators.js:16 56
+operators.js:12 Fizz
+operators.js:16 58
+operators.js:16 59
+operators.js:10 FizzBuzz
+operators.js:16 61
+operators.js:16 62
+operators.js:12 Fizz
+operators.js:16 64
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 67
+operators.js:16 68
+operators.js:12 Fizz
+operators.js:14 Buzz
+operators.js:16 71
+operators.js:12 Fizz
+operators.js:16 73
+operators.js:16 74
+operators.js:10 FizzBuzz
+operators.js:16 76
+operators.js:16 77
+operators.js:12 Fizz
+operators.js:16 79
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 82
+operators.js:16 83
+operators.js:12 Fizz
+operators.js:14 Buzz
+operators.js:16 86
+operators.js:12 Fizz
+operators.js:16 88
+operators.js:16 89
+operators.js:10 FizzBuzz
+operators.js:16 91
+operators.js:16 92
+operators.js:12 Fizz
+operators.js:16 94
+operators.js:14 Buzz
+operators.js:12 Fizz
+operators.js:16 97
+operators.js:16 98
+operators.js:12 Fizz
+operators.js:14 Buzz
