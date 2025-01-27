@@ -97,20 +97,67 @@
     // document.body.appendChild(ele);
     // document.body.appendChild(image);
 
-    let form = document.querySelector("form");
-let username = document.getElementById("uName");
-let mail = document.getElementById("uMail");
-let password = document.getElementById("uPass");
+//     let form = document.querySelector("form");
+// let username = document.getElementById("uName");
+// let mail = document.getElementById("uMail");
+// let password = document.getElementById("uPass");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  // console.log(event);
-  // console.log("Form sumitted");
-  let uname = username.value;
-  let umail = mail.value;
-  let upass = password.value;
-  let userDetails = { uname, umail, upass };
-  console.log(userDetails);
-  localStorage.setItem("userDteails", JSON.stringify(userDetails));
-});
-localStorage.clear();
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   // console.log(event);
+//   // console.log("Form sumitted");
+//   let uname = username.value;
+//   let umail = mail.value;
+//   let upass = password.value;
+//   let userDetails = { uname, umail, upass };
+//   console.log(userDetails);
+//   localStorage.setItem("userDteails", JSON.stringify(userDetails));
+// });
+// localStorage.clear();
+
+//!
+// let mainEle = document.createElement("div");
+// mainEle.setAttribute("id", "mainBlock");
+// mainEle.style.border="2px solid red";
+// mainEle.style.width="550px";
+// mainEle.style.height="550px";
+// console.log(mainEle);
+
+// let topEle = document.createElement("div");
+// topEle.setAttribute("class", "topBlock");
+// // console.log(topEle);
+
+// let image = document.createElement("img");
+// image.src = "./3606208.jpg";
+// image.style.width="550px";
+
+// let bottomEle = document.createElement("div");
+// bottomEle.setAttribute("class", "bottomBlock");
+// // console.log(bottomEle);
+
+// let h1 = document.createElement("h1");
+// h1.innerText = "CLOSURE";
+// h1.style.textAlign="center";
+
+
+
+// let btn = document.createElement("button");
+// btn.innerText = "TextView";
+// btn.style.border="none";
+// btn.style.padding="20px";
+// btn.style.backgroundColor="dodgerblue";
+// btn.style.color="white"
+
+// bottomEle.appendChild(h1);
+// bottomEle.appendChild(btn);
+
+// topEle.appendChild(image);
+// mainEle.appendChild(topEle);
+// mainEle.appendChild(bottomEle);
+
+// document.body.appendChild(mainEle);
+// let vd = document.createElement("video");
+// vd.setAttribute("src", "./videoplayback.mp4");
+// vd.setAttribute("controls", "true");
+// console.log(vd);
+// document.body.appendChild(vd);
