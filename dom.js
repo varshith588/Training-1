@@ -161,3 +161,49 @@
 // vd.setAttribute("controls", "true");
 // console.log(vd);
 // document.body.appendChild(vd);
+
+//!
+let form = document.querySelector("form");
+let username = document.getElementById("uName");
+let password = document.getElementById("uPass");
+let check = document.getElementById("check");
+let show = document.getElementById("show");
+let gender = document.getElementsByName("gender");
+// console.log(gender);
+
+// ! hiding and showing the password values
+check.addEventListener("click",event=>{
+    //console.log(event.target.checked);
+    if(event.target.checked == true){
+        password.setAttribute("type" , "text");
+        show.innerText = "hide passwod";
+    }else{
+        password.setAttribute("type" , "password");
+        show.innerText = "show password";
+    }
+})
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let UN = username.value;
+  let UP = password.value;
+  let gen = "";
+
+  for (let i = 0; i <= gender.length - 1; i++) {
+    // console.log(i);
+    // console.log(gender[i].value);
+    // console.log(gender[i].checked);
+    if (gender[i].checked == true) {
+      gen = gender[i].value;
+    }
+  }
+
+  // console.log(UN, UP, gen);
+  let userDetails = {
+    useranme: UN,
+    password: UP,
+    gender: gen,
+  };
+  console.log(userDetails);
+  sessionStorage.setItem("userData", JSON.stringify(userDetails));
+});
