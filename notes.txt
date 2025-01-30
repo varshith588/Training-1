@@ -324,3 +324,6 @@ dynamic creation of the html elements from javascript:
 ******************************************************
 - to create dynamic element in javascript we have a method called as "document.create
 
+//! take array of empolyee object, where each object contains proeprties such as empolyeeid, empolyee name, empolyee company, empolyee salary, empolyee address 
+where empolyee address is forthere having two more proeprties of objects such as empolyee city and empolyee area.
+print these proeprties in a form of table on the UI by using javascript 

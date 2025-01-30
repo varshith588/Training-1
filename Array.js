@@ -91,3 +91,27 @@
 //       .catch((err) => console.log(err));
 //   }
 //   fetchUsers();
+
+//! take array of empolyee object, where each object contains proeprties such as 
+// empolyeeid,
+// empolyee name, 
+// empolyee company, 
+// empolyee salary, 
+// empolyee address 
+//empolyee city and 
+//empolyee area
+//print these proeprties in a form of table on the UI by using javascript 
+
+// let userDetails ={
+//     id : 588,
+//     name : "varshith",
+//     company : "IBM",
+//     salary : 20,
+//     address:{   city : "hyd",
+//         area : "kompally",},
+//     details:function(){
+//         return  
+//     }
+  
+// }
+// console.log(userDetails);
