@@ -327,3 +327,12 @@ dynamic creation of the html elements from javascript:
 //! take array of empolyee object, where each object contains proeprties such as empolyeeid, empolyee name, empolyee company, empolyee salary, empolyee address 
 where empolyee address is forthere having two more proeprties of objects such as empolyee city and empolyee area.
 print these proeprties in a form of table on the UI by using javascript 
+
+Modules :
+=============
+->Modules are like import/export code to another js files
+
+ Named Modules : Definenly while importing should use the same name that you are defining exactly with in {} You can export as many modules of code that you want.
+
+ Default Modules:  While importing can use any name that you want. You can export only one modules of code in one source file. You should use the default keyword while exporting.
+
