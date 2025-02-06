@@ -1,108 +1,139 @@
-#Single page application:
--Only one HTML file
--No page reload or refresh
+- React is mainly used to create single page applications.
 
-#Multi page application:
--Multiple HTML files
--Page reload or refresh occurs
+what is virtual DOM ?
+- Virtual DOM is a virtual representation of a UI which is kept in a memory later 
+    synced with Real DOM with the help of a library called "ReactDOM".
 
--React is mainly used to create single page applications
+- The updation of real dom with virtual DOM.
 
-# What is VIrtual DOM
--Virtual DOM is the virtual representation of the UI which is kept in the memory and later
- synced with the real DOM with the help of a library called ReactDOM.
--The updation of Real DOM with virtual DOM
--The entire process of updating the real DOM with the help of virtual DOM is called as reconciliation
--Diffing algorithm is used to perform one-to-one mapping.
+- the entire process of updating the realDOM with the help of VDOM is called as "Reconcialtion".
 
-# JSX
--JSX stands for JavaScript and XML.
--JSX is a JavaScript syntax extension used to create HTML-like markup in React.
--Actual way to create an element in React is by using a method called as
-	React.createElement("tagname",{property:"value"}/null,content/children)
+JSX:-
+*****
+- JSX stands for Javascript and XML.
+- JSX is a javascript syntax extension used to create HTML-like markup in the react.
+- Actual way to create a element in react is by using a method called as,
+        - React.createElement("tagname" , {property:"value"}/null , content/children)
+         let ele  = React.createElement("div" , {className:"App"} , 
+    React.createElement("h1" ,null, "Header")
+  );
 
-Ex: let ele = React.createElement(
-		"div",
-		{ className: "App" },
-		React.createElement("h1", null, "Header")
-  	);
+- JSX is not a part of react but it is recomended to use in react.
 
--JSX is not a part of React but it is recommended to use in React
+Rules of JSX:-
+**************
+1.every element irrespective of paired/unpaired tag both must be closed.
+ex:-  <h1></h1> , <input/>
+2.more than one jsx element is used then they must wrapped with one parent element.
+ex:- <div>
+        <h1></h1>
+        <p></p>
+        </div>
 
-##Rules of JSX:
-1) Every element irrespective of paired/unpaired tag, both must be closed.
-Ex: <h1></h1>
-	<input/>
+JSX expression:-
+****************
+- JSX expression is used to call the variable , mathematical expressio inside the element.
+syntax :- <h1>{variable/expression}</h1>
 
-2) If more than one jsx element is used then they must be wrapped under one parent element.
-Ex: <section>
-      <h1 style={{ color: "red" }}>Name: Subhapreet Patro</h1>
-      <input />
-    </section>
+components:-
+************
+- components are the files/modules which consist of js related logics which can be reuse.
 
-## JSX expression
--It is used to call the variable or mathematical expression inside the element
-Syntax: <h1>{variable/expression}</h1>
+components are divided into two types:-
+1.class based components(CBC)
+2.fucntional based components(FBC)
 
-# Components:
--Components are the files or modules which consist of JavaScript related logicswhich can be reused
--Components are divided into two types:
-1) Class based components(CBC)
-2) Functional based components(FBC)
 
-(i) Class based components(CBC):
--CBC is similar to JavaScript ES6 class
--CBC are "stateful" components because of default state object present inside the class
+1.class based components(CBC):-
+*******************************
+- CBC is simlar to javscript es6 class.
+- CBC are "statefull" component because of default  state object present inside the class.
+syntax:-
 
--Syntax: 
-class Person{
-	constructor(name,age){
-		this.name=name;
-		this.age=age;
-	}
-}
+ class Person{
+    constructor(name , age){
+        this.name=name;
+        this.age=age;
+    }
+ }
 
 class Child extends Person{
-	constructor(name,age,city){
-		super(name,age);
-		this.city=city;
-	}
+    constructor(name , age , city){
+        super(name , age);
+        this.city=city;
+    }
 }
 
--Actual Syntax:
+syntax :- 
 class App extends React.Component{
-	render(){
-		return(
-			//JSX element
-		)
-	}
-}
-
-export default App;
-
-(ii) Functional based components(FBC):
--FBC are similar to JavaScript functions
--FBC are "stateless" because there is no state object until React v16.8
-
--Syntax:
-function App(){
-	return(
-		//JSX element
-	)
-}
-
-export default App;
-
-OR
-
-const App()=>{
-	return(
-		//JSX element
-	)
+    render(){
+        return(
+            //JSX
+        )
+    }
 }
 export default App;
 
-Note: While creating a React Component the names must start with capital letters
--Extension of a component file must be .jsx or .js
--How to call a component
-	<App/> OR <App></App>
+2.functional based component:-
+******************************
+- FBC are similar to JS functions.
+- FBC are "stateless" because there is no state object untill react v16.8.
+
+syntax :-  function App(){
+                return(
+
+                )
+            }
+            export default App;
+
+            OR
+            const App=()=>{
+                return(
+                    //jsx
+                )
+            }
+            export default App;
+
+Notee :- while ctreating a react compoennt the names must be started with capital letters.
+- extension of a component file must be .jsx/.js
+- How to call a component.
+    <App/> / <App></App>
+
+component omposition:-
+**********************
+- component composition is used to combine multiple components into single application.
+
+
+Props:-
+*******
+- props is nothing but a properties similar to html attributes.
+- props is an object.
+- props is an object used to exchange information/data from parent component to child component.
+
+
+props children:-
+
+props drilling:-
+
+state:-
+******
+- state is an mutable object which is used to store / isolate the data inside the component 
+
+
+
+
+
+
+
+
+function component:-
+- by default functional component stateless because there is no state object.
+- in react v16.8 , they introduce a concept called as "Hooks".
+syntax :- const[state , setState] = 
+
+Hooks:- hooks is nothing but a function which implement all the features of class component.
+
+basics hooks are:-
+1.usestate()
+2.useEffect()
+3.useContext()
