@@ -127,18 +127,50 @@
 // export default App
 
 // ! State 
-import React, { Component } from 'react';
+//import React, { Component } from 'react';
 // import CBCStateEx from './stateexample/CBCStateEx';
-import FBCStateEx from './stateexample/FBCStateEx';
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <FBCStateEx></FBCStateEx>
-            </div>
-        );
-    }
+//import FBCStateEx from './stateexample/FBCStateEx';
+//class App extends Component {
+    //render() {
+        //return (
+//             <div>
+//                 <FBCStateEx ></FBCStateEx>
+//             </div>
+//         );
+//     }
+// }
+
+// export default App;
+
+// import React from 'react'
+// import "./App.css"
+// import { FunctionalComponent } from './components/props/FunctionalComponent'
+// import ClassComponent from './components/ClassComponents'
+// const App = () => {
+//   return (
+//     <div>
+//     {/* <FunctionalComponent clg="MRU" msg="Good Afternoon" apply={true}/> */}
+//     <ClassComponent/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react';
+import './App.css';
+import MyForm from './components/MyForm';
+
+
+
+function App() {
+  return (
+    <div className="App">
+     <MyForm></MyForm>
+     </div>
+  );
 }
 
 export default App;
+
 
