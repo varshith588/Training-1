@@ -137,3 +137,13 @@ basics hooks are:-
 1.usestate()
 2.useEffect()
 3.useContext()
+
+2.useEffect():-
+-------------
+- it allows developer to make necessaty changes / side effects inside the component.
+syntax:- useEffect(callbackfn, dependency);
+
+
+
+list & keys :- every listem item from the array should hava unique key prop  value so it can 
+track all the changes done in the list

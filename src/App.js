@@ -157,20 +157,33 @@
 
 // export default App
 
-import React from 'react';
-import './App.css';
-import MyForm from './components/MyForm';
+// import React from 'react';
+// import './App.css';
+// import MyForm from './components/MyForm';
 
 
 
-function App() {
-  return (
-    <div className="App">
-     <MyForm></MyForm>
-     </div>
-  );
+// function App() {
+//   return (
+//     <div className="App">
+//      <MyForm></MyForm>
+//      </div>
+//   );
+// }
+
+// export default App;
+
+import React, { Component } from 'react';
+import UseEffectEx from './hooksexample/UseEffectEx';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <UseEffectEx></UseEffectEx>
+      </div>
+    );
+  }
 }
 
 export default App;
-
-
