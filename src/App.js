@@ -174,13 +174,15 @@
 // export default App;
 
 import React, { Component } from 'react';
-import UseEffectEx from './hooksexample/UseEffectEx';
+//import RefExamples from './hooksexample/RefExamples';
+// import UseEffectEx from './hooksexample/UseEffectEx';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <UseEffectEx></UseEffectEx>
+        {/* <UseEffectEx></UseEffectEx> */}
+        {/* <RefExamples></RefExamples> */}
       </div>
     );
   }

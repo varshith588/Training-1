@@ -147,3 +147,8 @@ syntax:- useEffect(callbackfn, dependency);
 
 list & keys :- every listem item from the array should hava unique key prop  value so it can 
 track all the changes done in the list
+
+
+3.useRef():-
+**********
+- ref is uesed to target native/real DOM elements.

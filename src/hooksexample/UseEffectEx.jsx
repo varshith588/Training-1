@@ -25,8 +25,8 @@ const UseEffectEx = () => {
                 users.map((user , index)=>{
                     return(
                         <React.Fragment key={index}>
-                            <h1>{user.name}</h1>
-                            <h1>{user.email}</h1>
+                            <h4>{user.name}</h4>
+                            <h10>{user.email}</h10>
                         </React.Fragment>
                     )
                 })
